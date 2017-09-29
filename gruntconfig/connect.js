@@ -42,6 +42,7 @@ var connect = {
       context: '/ws/',
       host: OFFSITE_HOST,
       port: OFFSITE_PORT,
+      protocol: (OFFSITE_PORT === '443' ? 'https:' : 'http:'),
       headers: {
         host: OFFSITE_HOST,
         'accept-encoding': 'identity'
